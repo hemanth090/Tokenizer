@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Optimized System Font Stack -->
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        font-feature-settings:
+          "kern" 1,
+          "liga" 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive tokenizer playground for analyzing and visualizing text tokenization in real-time."
+    />
+
+    <!-- Security Headers (meta fallbacks) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <title>Tokenizer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Mark fonts as loaded -->
+    <script>
+      if (document.fonts) {
+        document.fonts.ready.then(() => {
+          document.documentElement.classList.add("fonts-loaded");
+        });
+      }
+    </script>
+  </body>
+</html>
