@@ -75,6 +75,3 @@ The project is configured for easy deployment:
 - **Frontend**: optimized for [Vercel](https://vercel.com). set `VITE_API_URL` to your backend.
 - **Backend**: includes `render.yaml` for 1-click [Render](https://render.com) deployment.
 
-## License
-
-MIT
